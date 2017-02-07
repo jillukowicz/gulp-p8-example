@@ -10,9 +10,20 @@ gulp.task('p8-watch', function(cb){
 })
 
 gulp.task('p8-install', function(cb){
-  exec('p8 install -h', function (err, stdout, stderr) {
+  exec('p8 install', function (err, stdout, stderr) {
    console.log(stdout);
    console.log(stderr);
    cb(err);
  });
 })
+gulp.task('p8', function(cb){
+  exec('p8 -h', function (err, stdout, stderr) {
+   console.log(stdout);
+   console.log(stderr);
+   cb(err);
+ });
+})
+
+gulp.task('default',['p8-install', 'p8-watch'], function() {
+
+});
