@@ -1,0 +1,7 @@
+{
+  "name": "gulp-p8-example",
+  "version": "0.0.1",
+  "author": "jillukowicz",
+  "main": "./index.lua",
+  "description": "gulp-p8-example"
+}
